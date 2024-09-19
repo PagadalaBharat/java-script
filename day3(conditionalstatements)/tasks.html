@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Task 1: Day of the Week Message
+Scenario: Develop a webpage that displays a special message based on the current day of the week.
+
+“Start your week strong!” for Monday.
+“Keep going!” for Tuesday.
+“Halfway there!” for Wednesday.
+“Almost the weekend!” for Thursday.
+“Happy Friday!” for Friday.
+“Enjoy your weekend!” for Saturday and Sunday.
+
+Task:
+Get the current day of the week.
+Display the corresponding message. -->
+
+
+<!-- Task 2: Traffic Light Simulation
+Scenario: Simulate a traffic light system.
+
+“Stop” if the light is red.
+“Get Ready” if the light is yellow.
+“Go” if the light is green.
+Task:
+
+Prompt the user to enter the color of the traffic light.
+Display the corresponding action.
+
+
+
+Task 3: Discount Calculator
+Scenario: Calculate the discount based on the total purchase amount.
+
+“No discount” if the amount is less than $50.
+“5% discount” if the amount is between $50 and $100.
+“10% discount” if the amount is between $101 and $200.
+“15% discount” if the amount is above $200.
+Task:
+
+Prompt the user to enter the total purchase amount.
+Display the discount percentage.
+
+
+Task 4: Restaurant Menu
+Scenario: You are developing a restaurant menu system that provides the price of a dish based on the dish name.
+
+Task:
+Assume a variable dish holds the name of the dish as a string (e.g.,  "Biriyani", "shawarma", "Fried rice", "veg pula").
+Print the price.
+
+
+
+
+Task 5: Simple Calculator
+Scenario: You are developing a simple calculator that performs basic arithmetic operations.
+
+Task:
+
+Assume variables num1 and num2 hold two numbers, and operator holds the arithmetic operator as a string (e.g., “+”).
+Use a switch case statement to perform the operation and store the result in a variable result.
+Print the result. -->
+
+    <script>
+
+        ///////////////////days task//////////////////////
+      var day = prompt("enter a day ex: monday");
+      if (day == "monday") {
+        console.log("its monday");
+
+        console.log("Start your week strong!");
+      } else if (day == "tuesday") {
+        console.log("its tuesday");
+
+        console.log("“Keep going!”");
+      } else if (day == "wednesday") {
+        console.log("its wednesday");
+
+        console.log("“Halfway there!”");
+      } else if (day == "thursday") {
+        console.log("its thursday");
+
+        console.log("“Almost the weekend!”");
+      } else if (day == "friday") {
+        console.log("its friday");
+
+        console.log("“Happy Friday!”");
+      } else if (day == "saturday") {
+        console.log("its saturday");
+
+        console.log("“Enjoy your weekend!”");
+      } else if (day == "sunday") {
+        console.log("its sunday");
+
+        console.log("“get ready for tomorrow”");
+      } else {
+        console.log("enter a valid day");
+      }
+
+///////////////////////traffic lights task//////////////
+
+var light=prompt("enter red or yellow or green");
+if(light=="red"){
+    console.log("stop");
+    
+
+}
+else if(light=="yellow"){
+    console.log("get ready");
+    
+}
+else if(light=="green"){
+    console.log("go");
+    
+}
+else{
+    console.log("enter a valid color");
+    
+}
+
+
+///////////////////////// task 3 Discount Calculator/////////////////////
+// “No discount” if the amount is less than $50.
+// “5% discount” if the amount is between $50 and $100.
+// “10% discount” if the amount is between $101 and $200.
+// “15% discount” if the amount is above $200.
+
+var amount=+prompt("enter your amount spend (the system will take the amount in $)");
+if(amount>200){
+    console.log("15% discount");
+    
+
+}
+else if((amount>100)&&(amount<=200)){
+    console.log("10% discount");
+    
+}
+else if((amount>50)&&(amount<=100)){
+    console.log("5% discount");
+
+    
+}
+else{
+    console.log("no discount");
+    
+}
+
+////////////////////////////task 4////////////////////////
+// Task 4: Restaurant Menu
+// Scenario: You are developing a restaurant menu system that provides the price of a dish based on the dish name.
+
+// Task:
+// Assume a variable dish holds the name of the dish as a string (e.g.,  "Biriyani", "shawarma", "Fried rice", "veg pula").
+// Print the price.
+
+var dish=prompt("enter dish(we offer bat biryani,lizard shawarma,snake rice and ant pula)");
+switch(dish){
+    case "bat biryani": console.log("bat biryani cost : rs 200");
+    break;
+    case "lizard shawarma": console.log("lizard showrma cost : rs 300");
+    break;
+    case "snake rice": console.log("snake rice cost : rs 500");
+    break;
+    case "ant pula": console.log("ant pula cost : rs 150");
+    break;
+    case "frog fry": console.log("frog fry cost : rs 250");
+    break;
+    default: console.log("enter the menu items only");
+    
+}
+
+
+    </script>
+  </body>
+</html>

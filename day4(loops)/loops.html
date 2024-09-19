@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   
+    <script>
+//task1 print 1 to 10numbers
+for(i=1;i<=10;i++){
+    console.log(i);
+}
+
+// ////task 2  print 1 to 20 even numbers
+for(i=1;i<=20;i++){
+    if(i%2==0){
+        console.log(i)
+    }
+}
+// //// task3 5table
+
+for(i=1;i<=50;i++){
+    console.log("5*" + i +"="+ 5*i);
+}
+
+//task4 sum of 1 to 100 numbers
+sum=0;
+for(i=1;i<=100;i++){
+sum=sum+i;
+}
+console.log("the sum of 1 to 100 numbers is =  "+sum);
+
+
+//factorial value from user task 5
+var j=+prompt("enter a value to find factorial")
+count=1;
+for(i=1;i<=j;i++){
+count=count*i;
+}
+console.log("the factorial value of "+ j +" is =" +count);
+
+//Print Numbers in Reverse Order 1 t0 10 task6
+
+for(i=10;i>=1;i--){
+    console.log(i);
+}
+
+//Write a JavaScript script that uses nested loops to print a multiplication table for numbers 1 to 5. task 7
+for ( i = 1; i <= 5; i++) {
+  for ( j = 1; j <= 10; j++) {
+    console.log(i +"*" +j+"="+(i*j));
+  }
+  console.log("********************************"); 
+}
+
+    </script>
+</body>
+</html>

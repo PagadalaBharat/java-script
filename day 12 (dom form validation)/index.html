@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      span {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="">
+      <input type="text" placeholder="enter value" />
+      <span>strong</span>
+
+      <input type="submit" />
+    </form>
+
+    <script>
+      var form = document.querySelector("form");
+
+      var span = document.querySelector("span");
+      form.addEventListener("submit", function (event) {
+        event.preventDefault();
+        val = form[0].value;
+        if (val.length > 10) {
+          span.innerHTML = "strong";
+          span.style.color = "green";
+
+          span.style.display = "block";
+          // console.log("strong password")
+        } else if (val.length <= 10 && val.length > 5) {
+          span.innerHTML = "medium";
+          span.style.display = "block";
+          span.style.color = "orange";
+          console.log("medium");
+        } else {
+          console.log("weak password");
+          span.innerHTML = "weak";
+          span.style.color = "red";
+
+          span.style.display = "block";
+        }
+        console.log(val);
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var mainheading = document.createElement("h1");
+      mainheading.innerText = "P.Raviteja";
+      mainheading.style.color = "red";
+      console.log(mainheading);
+      document.body.appendChild(mainheading);
+
+      var career = document.createElement("h2");
+      career.innerHTML = "Career Objective";
+      career.style.color = "navy";
+      document.body.appendChild(career);
+      console.log(career);
+
+      var careerinfo = document.createElement("p");
+      careerinfo.innerHTML =
+        " Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit ab iure at illum necessitatibus? Praesentium itaque voluptatem optio impedit alias, libero iure quam repellat vero voluptatibus dolor cumque dolorem earum ";
+      careerinfo.style.color = "black";
+      careerinfo.style.width = "50vw";
+
+      document.body.appendChild(careerinfo);
+      console.log(careerinfo);
+
+      var skills = document.createElement("h2");
+      skills.innerHTML = "Techinal skills";
+      skills.style.color = "navy";
+      document.body.appendChild(skills);
+      console.log(skills);
+
+      var ul = document.createElement("ul");
+      console.log(ul);
+      var li1 = document.createElement("li");
+      li1.innerText = "html";
+      //   console.log(li1)
+      var li2 = document.createElement("li");
+      li2.innerText = "css";
+      //   console.log(li2)
+      var li3 = document.createElement("li");
+      li3.innerText = "javascript";
+      //   console.log(li3)
+      ul.appendChild(li1);
+      ul.appendChild(li2);
+      ul.appendChild(li3);
+
+      document.body.appendChild(ul);
+
+      var project = document.createElement("h2");
+      project.innerHTML = "Projects";
+      project.style.color = "navy";
+      document.body.appendChild(project);
+      console.log(project);
+
+      var projectheading = document.createElement("h3");
+      projectheading.innerText = "Amazon_Clone";
+      projectheading.style.color = "orange";
+      document.body.appendChild(projectheading);
+      console.log(projectheading);
+      var projectinfo = document.createElement("p");
+      projectinfo.innerHTML =
+        " Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit ab iure at illum necessitatibus? Praesentium itaque voluptatem optio impedit alias, libero iure quam repellat vero voluptatibus dolor cumque dolorem earum ";
+      projectinfo.style.color = "black";
+      projectinfo.style.width = "50vw";
+      console.log(projectinfo);
+      document.body.appendChild(projectinfo);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <input type="text" placeholder="enter password"><br>
+        <br>
+        <input type="text" placeholder="conform password">
+        <input type="submit">
+    </form>
+
+    <script>
+        var form=document.querySelector("form")
+        form.addEventListener("submit",function(event){
+            event.preventDefault();
+         var val=form[0].value
+         console.log(val)
+         
+        })
+
+    </script>
+</body>
+</html>
